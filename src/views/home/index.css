@@ -5,7 +5,7 @@
     background-color: black;
 }
 .header{
-    padding:25px 70px 50px 70px;
+    padding:25px 70px 25px 70px;
 }
 .to-do-text{
     float: left;
@@ -23,4 +23,8 @@
 }
 hr {
     clear: both;
-  }
+}
+.input-text{
+    background-color:#ffffff;
+    padding: 15px 130px;
+}
