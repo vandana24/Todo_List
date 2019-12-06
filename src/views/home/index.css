@@ -1,0 +1,26 @@
+.home{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+    background-color: black;
+}
+.header{
+    padding:25px 70px 50px 70px;
+}
+.to-do-text{
+    float: left;
+    font-size:35px;
+    color:gold;
+}
+.button-add{
+    float: right;
+    padding: 0px 20px;
+    border-radius: 4px;
+    background-color: #707070;
+    color: white;
+    font-size: 30px;
+    border: #707070;
+}
+hr {
+    clear: both;
+  }
