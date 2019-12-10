@@ -5,7 +5,7 @@
     background-color: black;
 }
 .header{
-    padding:25px 70px 25px 70px;
+    padding:13px 70px 36px 70px;
 }
 .to-do-text{
     float: left;
@@ -21,10 +21,24 @@
     font-size: 30px;
     border: #707070;
 }
+.form{
+    display:inline;
+}
 hr {
     clear: both;
+    background-color: #404040;
 }
 .input-text{
     background-color:#ffffff;
     padding: 15px 130px;
+    width:100%;
+}
+.taskList{
+    margin: 10px 50px;
+    font-size: 18px;
+}
+.theList{
+    color:#ffffff;
+    margin: 10px 0px;
+    text-align: left;
 }

@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 
 class todoItems extends Component {
     createTasks(item){
-        return <li key={item.key}>{item.text}</li>
+        return <React.Fragment>
+        <div key={item.key} className='taskList'>{item.text}</div>
+        <hr></hr>
+        </React.Fragment>
     }
     render() {
         let todoEntries = this.props.entries;
         let listItems = todoEntries.map(this.createTasks);
         return (
-           <ul className='theList' style={{color:'white'}}>
+           <div className='theList'>
                {listItems}
-           </ul>
+           </div>
         );
     }
 }

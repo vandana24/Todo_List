@@ -5,7 +5,8 @@ class home extends Component {
     constructor(props){
         super(props);
          this.state = {
-             items:[]
+             items:[],
+             addButton:false
          }
 
 
@@ -33,15 +34,15 @@ class home extends Component {
         return (
             <div className='home'>
                 <div className='header'>
-                    <form onSubmit={this.addItem}>
                     <div className='to-do-text'>Todo</div>
-                    <input ref={(a) => this._inputElement = a} 
-                     
-                     className='input-text'  ></input>
-                    <button className='button-add'>+</button>
-                    </form>
+                    <button className='button-add' onClick={() => this.setState({addButton:true})}>+</button>
                 </div>
                 <hr></hr>
+                <form onSubmit={this.addItem} className='form'>
+                    {this.state.addButton &&
+                    <input ref={(a) => this._inputElement = a} className='input-text'></input>
+                    }
+                </form>
                 <TodoItems entries={this.state.items} />
             </div>
         );
