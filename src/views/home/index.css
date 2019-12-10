@@ -20,6 +20,7 @@
     color: white;
     font-size: 30px;
     border: #707070;
+    text-align: center;
 }
 .form{
     display:inline;
@@ -29,10 +30,15 @@ hr {
     background-color: #404040;
 }
 .input-text{
-    background-color:#ffffff;
+    background-color: black;
     padding: 15px 130px;
-    width:100%;
+    width: 100%;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
+
 .taskList{
     margin: 10px 50px;
     font-size: 18px;

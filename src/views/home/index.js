@@ -35,7 +35,7 @@ class home extends Component {
             <div className='home'>
                 <div className='header'>
                     <div className='to-do-text'>Todo</div>
-                    <button className='button-add' onClick={() => this.setState({addButton:true})}>+</button>
+                    <button type="button" className='button-add' onClick={() => this.setState({addButton:true})}>+</button>
                 </div>
                 <hr></hr>
                 <form onSubmit={this.addItem} className='form'>
